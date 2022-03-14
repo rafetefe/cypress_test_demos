@@ -1,0 +1,5 @@
+Bug 1-About score update:
+	
+	The documentation of API specifies that /score/ updates are made with "PUT" method, but the code in project uses "POST" method.
+			
+	Even through 'API.ts' has a declared PUT method, the 'score.ts'->'score-update.ts'->'GameWindows.tsx' (inherited in order) uses 'POST' method.
